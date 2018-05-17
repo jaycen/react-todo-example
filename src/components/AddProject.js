@@ -36,7 +36,6 @@ class AddProject extends Component {
     });
     return (
       <div className="AddProject box">
-        <h3 className="title">Add Project</h3>
         <form onSubmit={this.handleSubmit.bind(this)}>
           <div className="field">
             <label className="label">Title</label>
@@ -64,7 +63,7 @@ class AddProject extends Component {
           </div>
           <div className="field">
             <div className="control">
-              <input className="button is-info" type="submit" value="Submit" />
+              <input className="button is-info" type="submit" value="Add Project" />
             </div>
           </div>
         </form>

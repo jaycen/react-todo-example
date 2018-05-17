@@ -30,15 +30,17 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <section className="section is-large has-background-link">
-          <div className="container">
-          <h1 className="title has-text-white">Projects</h1>
-            <div className="columns">
-              <div className="column">
-                <Projects projects={this.state.projects} onDelete={this.handleDeleteProject.bind(this)}/>
-              </div>
-              <div className="column">
-                <AddProject addProject={this.handleAddProject.bind(this)}/>
+        <section className="hero section is-medium is-info is-bold">
+          <div class="hero-body">
+            <div className="container">
+            <h1 className="title has-text-white">Projects</h1>
+              <div className="columns">
+                <div className="column">
+                  <Projects projects={this.state.projects} onDelete={this.handleDeleteProject.bind(this)}/>
+                </div>
+                <div className="column">
+                  <AddProject addProject={this.handleAddProject.bind(this)}/>
+                </div>
               </div>
             </div>
           </div>
